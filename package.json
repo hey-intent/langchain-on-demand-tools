@@ -1,0 +1,40 @@
+{
+  "name": "skills-pedagogic-implementation",
+  "version": "1.0.0",
+  "description": "A Clean implementation of Tools lazy loading (pedagogical purpose)",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "agent": "tsx src/run-agent.ts",
+    "demo": "tsx src/run-demo.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "@langchain/core": "^1.1.12",
+    "@langchain/openai": "^1.2.1",
+    "dotenv": "^17.2.3",
+    "langchain": "^1.2.7",
+    "mathjs": "^15.1.0",
+    "pino": "^10.1.1",
+    "pino-pretty": "^13.1.3",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^20.19.28",
+    "@typescript-eslint/eslint-plugin": "^8.52.0",
+    "@typescript-eslint/parser": "^8.52.0",
+    "eslint": "^9.39.2",
+    "prettier": "^3.4.2",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0",
+    "typescript-eslint": "^8.52.0"
+  }
+}
